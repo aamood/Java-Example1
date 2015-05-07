@@ -1,0 +1,23 @@
+import javax.swing.JOptionPane;
+public class ThreeLetterAcronym {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		final char SPACE = ' ' ;
+		char[] letters = new char[3];
+			
+		String wordInput;
+		
+		
+		wordInput = JOptionPane.showInputDialog(null, "Enter a three word string.");
+		
+		for (int x = 0; wordInput.charAt(x) < wordInput.length(); ++x){
+			if (wordInput.charAt(x) == SPACE){
+				++x;
+				letters[0] = wordInput.charAt(x);
+			}
+		
+		}
+	}
+
+}
